@@ -86,6 +86,35 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		exampleVariable2 = 0;
 		exampleVariable3 = 0;
 	}
+
+	function addition()
+	{
+		exampleVariable4 = parseFloat(document.getElementById("thirdInputbox").value);
+		exampleVariable3 = exampleVariable3 + exampleVariable4
+		alert("You just ran an addition function!");
+		console.log("Addition function was run.");
+	}
+	function subtraction()
+	{
+		exampleVariable4 = parseFloat(document.getElementById("thirdInputbox").value);
+		exampleVariable3 = exampleVariable3 - exampleVariable4
+		alert("You just ran an subtraction function!");
+		console.log("Subtraction function was run.");
+	}
+	function multiplication()
+	{
+		exampleVariable4 = parseFloat(document.getElementById("thirdInputbox").value);
+		exampleVariable3 = exampleVariable3 * exampleVariable4
+		alert("You just ran an multiplcation function!");
+		console.log("Multiplication function was run.");
+	}
+	function divison()
+	{
+		exampleVariable4 = parseFloat(document.getElementById("thirdInputbox").value);
+		exampleVariable3 = exampleVariable3 / exampleVariable4
+		alert("You just ran an diviosn function!");
+		console.log("Division function was run.");
+	}
 </script>
   
   
@@ -197,9 +226,15 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
     	</div>
 		<form>
 			<!--Label for first input field.-->
-			<label for="InputthirdBox">Enter a number:</label><br>
+			<label for="thirdInputbox">Enter a number:</label><br>
 			<!--User input box.-->
 			<input type="number" id="thirdInputBox" value="0"><br>
+			<br><br><br>
+	</form>
+	<a href="#thirdpage" onclick="addition();" class="w3-btn w3-grey">Addition</a>
+  	<a href="#thirdpage" onclick="subtraction();" class="w3-btn w3-grey">Subtraction</a>
+ 	<a href="#thirdpage" onclick="multiplcation();" class="w3-btn w3-grey">Multiplication</a>
+	<a href="#thirdpage" onclick="division();" class="w3-btn w3-grey">Division</a>
 	</center>
 </div>
   
